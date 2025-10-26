@@ -1,0 +1,6 @@
+{
+    // See README for details; these are defaults.
+    "debug": false,
+    "update_delay_ms": 32,
+    "max_scan_lines": 5000
+}

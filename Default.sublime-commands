@@ -1,0 +1,4 @@
+[
+    { "caption": "Breadcrumb Panel: Toggle", "command": "toggle_breadcrumb_panel" },
+    { "caption": "Breadcrumb Panel: Toggle Debug", "command": "toggle_breadcrumb_panel_debug" }
+]

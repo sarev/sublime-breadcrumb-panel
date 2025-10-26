@@ -1,0 +1,10 @@
+# Exclude repo-only files from the packaged .sublime-package
+
+.gitignore export-ignore
+.gitattributes export-ignore
+.github/ export-ignore
+tests/ export-ignore
+docs/ export-ignore
+*.png export-ignore
+*.jpg export-ignore
+*.gif export-ignore

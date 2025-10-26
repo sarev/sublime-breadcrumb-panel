@@ -1,0 +1,5 @@
+Breadcrumb Panel — thanks for installing!
+
+• Toggle the panel from the Command Palette: "Breadcrumb Panel: Toggle".
+• Add your own key binding if you like.
+• See README for settings and details.
