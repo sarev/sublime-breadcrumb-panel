@@ -461,7 +461,6 @@ def _schedule_update(window: sublime.Window, hint_view: Optional[sublime.View]) 
     STATE.last_scheduled = token
 
     def _run():
-        # Drop stale runs.
         """
         Update the breadcrumb panel with the current view's context.
 
@@ -579,7 +578,6 @@ class BreadcrumbPanelListener(sublime_plugin.EventListener):
 
         return bool(view.settings().get("is_widget") or not STATE.enabled)
 
-    # all event hooks now schedule a coalesced update
     def on_activated(self, view: sublime.View) -> None:
         """
         Schedule an update of the view's window.
@@ -640,7 +638,6 @@ class BreadcrumbPanelListener(sublime_plugin.EventListener):
         if w:
             _schedule_update(w, view)
 
-    # Click-to-jump unchanged
     def on_text_command(self, view: sublime.View, command_name: str, args: dict):
         """
         Handle a text command in the view.
